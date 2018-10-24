@@ -1,12 +1,20 @@
-html{
+*{
 
 }
 h2{
-
+  font-weight: bold;
+}
+main{
+  margin-top: 15px;
 }
 .header{
   border: 1px solid black;
+  position: fixed;
+  z-index: 2;
+  background-color: white;
+  left: 0;
   margin: 0;
+  top: 0;
   display: flex;
   flex-flow: row: wrap;
   justify-content: space-between;
@@ -26,14 +34,10 @@ h2{
   color: mediumaquamarine;
 }
 .nav_containter{
-  display: flex;
-  flex-flow: row: wrap;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
+  display: inline-block;
 }
 .nav_item{
-  padding: 25px
+  padding: 25px;
 }
 .nav_item a{
   font-size: 14px;
@@ -42,51 +46,167 @@ h2{
   color: black;
 }
 .main_content_container{
-  width: 1200px;
-  max-width: 1200px;
-  min-width: 1000px;
-  height: 630px;
-  margin: auto;
+  position: relative;
+  margin-left: auto;
+  padding: 0 25px;
+  top: 55px;
+  width: 100%;
+  min-width: 1190px;
+  height: auto;
   display: flex;
-  flex-flow: row: wrap;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   align-content: flex-start;
-  border: 1px solid black;
 }
 .column_large{
   display: flex;
   flex-flow: column wrap;
   width: 630px;
-  height: 600px;
-  margin-right: 15px;
-  border: 1px solid black;
-}
-.large_item{
-  border: 1px solid black;
   height: auto;
+  margin-right: 25px;
+  padding: 0 10px 0 0;
 }
+.large_item_1{
+  display: flex;
+  flex-flow: row; nowrap;
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png);
+  background-size: 630px;
+  width: 630px;
+  height: 250px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.large_item_text{
+  padding: 0 5px;
+  flex: auto;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+.column_large_bottom{
+  display: flex;
+  flex-flow: row; nowrap;
+}
+.large_column_1{
+  display: flex;
+  flex-flow: column; nowrap;
+  padding: 0 5px;
+}
+.large_column_2{
+  display: flex;
+  flex-flow: column; nowrap;
+  padding: 0 5px;
+}
+.large_item_2{
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+.large_item_3{
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+.large_item_4{
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png);
+  height: 300px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.large_item_4_txt{
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.large_item_5{
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+.large_item_6{
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png);
+  height: 300px;
+  width: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.large_item_6_txt{
+  width: auto;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
 .column_medium{
   display: flex;
   flex-flow: column wrap;
   width: 300px;
-  height: 600px;
-  margin-right: 15px;
-  border: 1px solid black;
-}
-.medium_item{
-  border: 1px solid black;
   height: auto;
+  margin-right: 25px;
+}
+.medium_item_1{
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+.medium_item_2{
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png);
+  width: 300px;
+  height: 300px;
+}
+.medium_item_2_txt{
+  padding: 75px 5px;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.medium_item_3{
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
 }
 .column_small{
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   width: 240px;
   height: 600px;
-  margin-right: 15px;
-  border: 1px solid black;
+  margin-right: 25px;
 }
 .small_item{
-  border: 1px solid black;
   height: auto;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0;
+  justify-content: flex-start;
+}
+.small_item_txt p{
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  background-color: WhiteSmoke;
+  margin: 0;
+  font-family: Verdana;
+  font-weight: normal;
+  text-align: center;
+  font-size: 12px;
+  color: DimGray;
+  height: 40px;
 }
